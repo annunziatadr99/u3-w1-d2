@@ -1,32 +1,29 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
-function App() {
+import MyNav from './components/MyNav';
+import { Component } from 'react';
+import Section from './components/Section';
 
 
-  return (
-   <Container fluid="md"> 
-   <Row>
-    <h1>Hello</h1>
-    <Col md={4}> 
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium quis, dolorum quas harum consequuntur dignissimos repudiandae eaque autem voluptatibus ullam, officia modi. Ipsum, cum excepturi dolor magnam accusamus quaerat possimus.
-    Possimus aut deserunt dolores cupiditate numquam, neque cumque dolor, ut obcaecati necessitatibus, est ipsum minima consequatur voluptates officiis ea facere maiores optio a. Ipsa quam, eaque itaque soluta deleniti tempore!</p>
-    </Col>
-    <Col md={4}> 
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium quis, dolorum quas harum consequuntur dignissimos repudiandae eaque autem voluptatibus ullam, officia modi. Ipsum, cum excepturi dolor magnam accusamus quaerat possimus.
-    Possimus aut deserunt dolores cupiditate numquam, neque cumque dolor, ut obcaecati necessitatibus, est ipsum minima consequatur voluptates officiis ea facere maiores optio a. Ipsa quam, eaque itaque soluta deleniti tempore!</p>
-    </Col>
-    <Col md={4}> 
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium quis, dolorum quas harum consequuntur dignissimos repudiandae eaque autem voluptatibus ullam, officia modi. Ipsum, cum excepturi dolor magnam accusamus quaerat possimus.
-    Possimus aut deserunt dolores cupiditate numquam, neque cumque dolor, ut obcaecati necessitatibus, est ipsum minima consequatur voluptates officiis ea facere maiores optio a. Ipsa quam, eaque itaque soluta deleniti tempore!</p>
-    </Col>
-   </Row>
+class App extends Component {
+  render(){
 
-   </Container>
-  )
+    return (
+      <div className='App'>
+        <MyNav logo="EpiBooks" href="https://www.google.it/?hl=it" HrefName="Home" href2="https://www.youtube.com/" HrefName2="About" href3="https://www.npmjs.com/" HrefName3="Browser"/>
+
+        <Section Sottotitolo="Benvenuti nella nostra Libreria" descriptionAlert="Approfitta del Black-Friday!" />
+      </div>
+       
+     
+     
+  
+      
+     
+    )
+  }
+
+
 }
 
 export default App
