@@ -1,10 +1,9 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 
-
-const MyNav = props => (
-    <Navbar expand="sm" className="bg-body-tertiary">
+const MyNav = (props) => (
+  <Navbar expand="sm" className="bg-body-tertiary">
     <Container>
       <Navbar.Brand href="#home">{props.logo}</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -18,4 +17,4 @@ const MyNav = props => (
     </Container>
   </Navbar>
 );
-export default MyNav
+export default MyNav;

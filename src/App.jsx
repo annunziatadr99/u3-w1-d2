@@ -1,29 +1,30 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css'
-import MyNav from './components/MyNav';
-import { Component } from 'react';
-import Section from './components/Section';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import MyNav from "./components/MyNav";
+import Welcome from "./components/Welcome";
+import AllTheBooks from "./components/AllTheBooks";
+import MyFooter from "./components/MyFooter";
 
+function App() {
+  return (
+    <div className="App">
+      <MyNav
+        logo="EpiBooks"
+        href="https://www.google.it/?hl=it"
+        HrefName="Home"
+        href2="https://www.youtube.com/"
+        HrefName2="About"
+        href3="https://www.npmjs.com/"
+        HrefName3="Browser"
+      />
 
-class App extends Component {
-  render(){
+      <Welcome descriptionAlert="Benvenuti nella nostra Libreria" />
 
-    return (
-      <div className='App'>
-        <MyNav logo="EpiBooks" href="https://www.google.it/?hl=it" HrefName="Home" href2="https://www.youtube.com/" HrefName2="About" href3="https://www.npmjs.com/" HrefName3="Browser"/>
+      <AllTheBooks />
 
-        <Section Sottotitolo="Benvenuti nella nostra Libreria" descriptionAlert="Approfitta del Black-Friday!" />
-      </div>
-       
-     
-     
-  
-      
-     
-    )
-  }
-
-
+      <MyFooter />
+    </div>
+  );
 }
 
-export default App
+export default App;
